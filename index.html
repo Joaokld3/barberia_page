@@ -1,0 +1,62 @@
+<!DOCTYPE html><!--permite al navegador entender qué versión de HTML estamos utilizando -->
+<html lang="es"><!--marca el contenido a ser renderizado en el navegador y define idioma de nuestra pagina-->
+    <head><!--Cabecera de la página, suministra información sobre toda la página-->
+        <meta charset="UTF-8"><!--representa la raiz de un documento HTML-->
+        <meta name="viewport" content="width=device-width"><!--Adaptar pagina a dispositivos móviles--> 
+        <title>Barbería Centenario</title><!--Muestra el título de nuestra página en la pestaña del navegador-->
+        <link rel="stylesheet" href="reset.css"><!--Es un css para linpiar formatos por defecto del navegador-->
+        <link rel="stylesheet" href="style.css"><!--Relaciona el HTML con la hoja de estilo-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body><!--Inicio del cuerpo de la página-->
+        <header><!--Encabezado principal, muestra info del cuerpo o alguna sección de la página-->
+            <div class="caja"><!--estructurar el documento en modo de secciones, si varias poner clases o id.-->
+                <h1><img id="logo" src="imagenes/logo.png"></h1><!--Enfatiza el logo, Etiqueta para traer imagen-->
+                <nav><!--contenedor de enlaces de navegación-->
+                    <ul><!--unorder list-->
+                        <li><a href="index.html">Home</a></li><!--cada objeto de la lista lleva esta etiqueta-->
+                        <li><a href="productos.html">Productos</a></li><!-- "a href" crear un enlace a una página web-->
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <img class="banner" src="banner/banner.jpg">
+        <main>
+            <section class="principal"><!--Section indica q el bloque tiene contenido entresi, semantico-->
+                <h2 class="titulo-principal">Sobre la Barbería Centenario</h2>
+                <img class="utensilios"  src="imagenes/utensilios.jpg" alt="Utensilios de un barbero."><!--alt es texto alternativo si no carga-->
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Centenario</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Centenario ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p><!--<strong>resalta como negrilla,<em> enfatiza texto-->
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p><!--Id con # y class con . esto para llamarlos en css, p es parrafo-->
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+            </section>
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.957810561158!2d-74.09211949218755!3d4.640500800000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b194c6ce111%3A0xbbd6802d3b82a9bd!2sBarberia%20Twenty%20One%20BarberShop!5e0!3m2!1sen!2sco!4v1661017406505!5m2!1sen!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><!--creación espacios para colocar contenido visual; mapas, videos, gif, etc-->
+                </div>
+            </section>
+            <section class="diferenciales">
+                <h3 class="titulo-principal">Diferenciales</h3>
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atención personalizada <br>&nbsp;&nbsp; para los clientes</li><br>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        <footer><!--Pie de página-->
+            <img id="logof" src="imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barbería Centenario - 2022</p>
+        </footer>
+    </body>
+</html>
